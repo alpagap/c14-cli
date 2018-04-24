@@ -10,10 +10,10 @@ import (
 
 	"golang.org/x/oauth2"
 
+	"github.com/alpagap/c14-rclone/pkg/api"
+	"github.com/alpagap/c14-rclone/pkg/api/auth"
+	"github.com/alpagap/c14-rclone/pkg/version"
 	"github.com/cocooma/mflag"
-	"github.com/online-net/c14-cli/pkg/api"
-	"github.com/online-net/c14-cli/pkg/api/auth"
-	"github.com/online-net/c14-cli/pkg/version"
 )
 
 // Config represents the informations on the usages

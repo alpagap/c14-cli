@@ -9,8 +9,8 @@ import (
 	"golang.org/x/oauth2"
 
 	"github.com/QuentinPerez/go-encodeUrl"
+	"github.com/alpagap/c14-rclone/pkg/utils/configstore"
 	"github.com/juju/errors"
-	"github.com/online-net/c14-cli/pkg/utils/configstore"
 )
 
 var (

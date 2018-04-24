@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/alpagap/c14-rclone/pkg/api"
 	"github.com/apex/log"
-	"github.com/online-net/c14-cli/pkg/api"
 )
 
 type verify struct {

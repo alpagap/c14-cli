@@ -6,9 +6,9 @@ import (
 
 	"strings"
 
+	"github.com/alpagap/c14-rclone/pkg/api"
 	"github.com/docker/docker/pkg/namesgenerator"
 	"github.com/juju/errors"
-	"github.com/online-net/c14-cli/pkg/api"
 )
 
 type create struct {

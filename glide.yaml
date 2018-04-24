@@ -1,4 +1,4 @@
-package: github.com/online-net/c14-cli
+package: github.com/alpagap/c14-rclone
 import:
 - package: github.com/QuentinPerez/go-encodeUrl
 - package: github.com/apex/log

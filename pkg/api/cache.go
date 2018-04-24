@@ -4,8 +4,8 @@ import (
 	"errors"
 	"sync"
 
+	"github.com/alpagap/c14-rclone/pkg/utils/configstore"
 	"github.com/apex/log"
-	"github.com/online-net/c14-cli/pkg/utils/configstore"
 )
 
 type cacheSafe struct {

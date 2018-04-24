@@ -1,6 +1,6 @@
 package commands
 
-import "github.com/online-net/c14-cli/pkg/api"
+import "github.com/alpagap/c14-rclone/pkg/api"
 
 type rename struct {
 	Base

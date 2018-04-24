@@ -6,10 +6,10 @@ import (
 	"strings"
 	"text/tabwriter"
 
+	"github.com/alpagap/c14-rclone/pkg/api"
+	"github.com/alpagap/c14-rclone/pkg/utils/ssh"
 	"github.com/apex/log"
 	"github.com/dustin/go-humanize"
-	"github.com/online-net/c14-cli/pkg/api"
-	"github.com/online-net/c14-cli/pkg/utils/ssh"
 	"github.com/pkg/sftp"
 )
 

@@ -3,8 +3,8 @@ package commands
 import (
 	"encoding/json"
 	"fmt"
+	"github.com/alpagap/c14-rclone/pkg/api"
 	"github.com/juju/errors"
-	"github.com/online-net/c14-cli/pkg/api"
 	"os"
 	"strings"
 	"text/tabwriter"
