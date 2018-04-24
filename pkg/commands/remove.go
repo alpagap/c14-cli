@@ -1,7 +1,6 @@
 package commands
 
 import (
-	"fmt"
 	"sort"
 	"sync"
 
@@ -76,23 +75,16 @@ func (r *remove) remove(wait *sync.WaitGroup, archive string) (err error) {
 		log.Warnf("%s: %s", archive, err)
 		return
 	}
-	fmt.Print("DELETE : ")
-	fmt.Print(" safe=")
-	fmt.Print(safe.UUIDRef)
-	fmt.Print(" arch=")
-	fmt.Print(uuidArchive)
-	fmt.Println()
-	/*
-		if err = r.OnlineAPI.DeleteArchive(safe.UUIDRef, uuidArchive); err != nil {
-			log.Warnf("%s: %s", uuidArchive, err)
+	if err = r.OnlineAPI.DeleteArchive(safe.UUIDRef, uuidArchive); err != nil {
+		log.Warnf("%s: %s", uuidArchive, err)
+		return
+	}
+	if r.flForce {
+		if err = r.OnlineAPI.DeleteSafe(safe.UUIDRef); err != nil {
+			log.Warnf("%s: %s", safe.UUIDRef, err)
 			return
 		}
-		if r.flForce {
-			if err = r.OnlineAPI.DeleteSafe(safe.UUIDRef); err != nil {
-				log.Warnf("%s: %s", safe.UUIDRef, err)
-				return
-			}
-		}*/
+	}
 	return
 }
 
